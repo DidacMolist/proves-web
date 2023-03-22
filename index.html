@@ -1,209 +1,127 @@
-*
-{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-main 
-{
-  margin-top: 50px;
-}
-/*------------------------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------*/
-header
-{
-  position: fixed;
-  top: 0;
-	left: 0;
-	width: 100%;
-	background-color: #333;
-}
-nav 
-{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 50px;
-}
-nav ul 
-{
-display: flex;
-list-style: none;
-}
-nav ul li 
-{
-margin: 0 10px;
-}
-nav ul li a 
-{
-color: #fff;
-text-decoration: none;
-padding: 10px;
-}
-/*------------------------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------*/
-.sliderPrime
-{
-  height: 500px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #ccc;
-}
-.slider
-{
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-.slides
-{
-  width: 500%;
-  height: 100%;
-  display: flex;
-}
-.slides input
-{
-  display: none;
-}
-.slide
-{
-  width: 20%;
-  transition: 2s;
-}
-.slide img
-{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.nav-manual
-{
-  position: absolute;
-  width: 100%;
-  margin-top: -40px;
-  display: flex;
-  justify-content: center;
-}
-.manual-btn
-{
-  border: 16px solid #ff00d4;
-  padding: 0px;
-  cursor: pointer;
-  transition: 1s;
-}
-.manual-btn:not(:last-child)
-{
-  margin-right: 100px;
-}
-.manual-btn:hover
-{
-  background-color: #e5e5e5;
-}
-#radio1:checked ~ .first
-{
-  margin-left: 0;
-}
-#radio2:checked ~ .first
-{
-  margin-left: -20%;
-}
-#radio3:checked ~ .first
-{
-  margin-left: -40%;
-}
-#radio4:checked ~ .first
-{
-  margin-left: -60%;
-}
-.nav-auto
-{
-  position: absolute;
-  display: flex;
-  width: 1000px;
-  justify-content: center;
-  margin-top: 460px;
-}
-.nav-auto div
-{
-  border: 0px solid #e5e5e5;
-  padding: 0px;
-  border-radius: 0px;
-  transition: 1s;
-}
-.nav-auto div:not(:last-child)
-{
-  margin-right: 0px;
-}
-#radio1:checked ~ .nav-auto .auto-btn1
-{
-  background-color: #e5e5e5;
-}
-#radio2:checked ~ .nav-auto .auto-btn2
-{
-  background-color: #e5e5e5;
-}
-#radio3:checked ~ .nav-auto .auto-btn3
-{
-  background-color: #e5e5e5;
-}
-#radio4:checked ~ .nav-auto .auto-btn4
-{
-  background-color: #e5e5e5;
-}
-/*------------------------------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------*/
-.image-section
-{
-  height: 500px;
-  display: flex;
-  background-color: #ccc;
-}
-.image-wrapper
-  {
-    display: flex;
-    margin: 60px;
-  }
-  .image-container 
-  {
-    position: relative;
-    width: 50%;
-    margin-right: 20px;
-  }
-  .image-container:last-child 
-  {
-    margin-right: 0;
-  }
-  .image-container img 
-  {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  .overlay 
-  {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    overflow: hidden;
-    height: 0;
-    transition: .5s ease;
-  }
-  .image-container:hover .overlay 
-  {
-    height: 100%;
-  }
-  .text 
-  {
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-  }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="java.js"></script>
+    <title>WEB 1er A Batxillerat</title>
+</head>
+<body>
+<!--------------------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------->
+<header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Inici</a></li>
+      <li><a href="presentacio.html">Presentació</a></li>
+      <li><a href="exercicis.html">Exercicis</a></li>
+      <li><a href="creació de la web.html">Creació de la Web</a></li>
+      <li><a href="videojocs.html">Videojocs</a></li>
+      <li><a href="arcodi.html">Artcodi</a></li>
+    </ul>
+  </nav>
+</header>
+<!--------------------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------->
+<main>
+
+    <section class="sliderPrime">
+        <div class="slider">
+          <div class="slides">
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+
+            <div class="slide first">
+              <img src="tian.jpg" alt="">
+            </div>
+            <div class="slide">
+              <img src="BANDOLS.jpg" alt="">
+            </div>
+            <div class="slide">
+              <img src="NS.jpg" alt="">
+            </div>
+            <div class="slide">
+              <img src="ariadnaHAPPY.jpg" alt="">
+            </div>
+      
+            <div class="nav-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+              <div class="auto-btn4"></div>
+            </div>
+      
+          </div>
+      
+          <div class="nav-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+          </div>
+      
+        </div>
+      
+      </section>
+<!--------------------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------->
+      <section class="image-section">
+        <div class="image-wrapper">
+          <div class="image-container">
+            <a href="presentacio.html">
+            <img src="" alt="Imagen 1">
+            <div class="overlay">
+              <div class="text">PRESENTACIÓ</div>
+            </div>
+            </a>
+          </div>
+          <div class="image-container">
+            <a href="exercicis.html">
+            <img src="" alt="Imagen 2">
+            <div class="overlay">
+              <div class="text">EXERCICIS</div>
+            </div>
+            </a>
+          </div>
+          <div class="image-container">
+            <a href="creació de la web.html">
+            <img src="" alt="Imagen 3">
+            <div class="overlay">
+              <div class="text">CREACIÓ DE LA WEB</div>
+            </div>
+            </a>
+          </div>
+          <div class="image-container">
+            <a href="videojocs.html">
+            <img src="" alt="Imagen 4">
+            <div class="overlay">
+              <div class="text">VIDEOJOCS</div>
+            </div>
+            </a>
+          </div>
+          <div class="image-container">
+            <a href="arcodi.html">
+            <img src="" alt="Imagen 5">
+            <div class="overlay">
+              <div class="text">ARTCODI</div>
+            </div>
+            </a>
+          </div>
+        </div>
+      </section>
+<!--------------------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------->
+
+
+
+<!--------------------------------------------------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------------------------------------------------->
+</main>
+
+
+</body>
+</html>

@@ -207,3 +207,9 @@ padding: 10px;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
   }
+.caixa1{
+  width: 200px;
+height: 200px;
+border: 1px solid black;
+
+}

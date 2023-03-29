@@ -51,7 +51,7 @@ padding: 10px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #f4e9cd;
+  background-color: #9b9892;
 }
 .slider
 {
@@ -101,7 +101,7 @@ padding: 10px;
 }
 .manual-btn:hover
 {
-  background-color: #e5e5e5;
+  background-color: #f4e9cd;
 }
 #radio1:checked ~ .first
 {

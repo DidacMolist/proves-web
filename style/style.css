@@ -11,7 +11,7 @@ header
   top: 0;
 	left: 0;
 	width: 100%;
-	background-color: #15287c;
+	background-color: #031926;
 }
 main 
 {
@@ -51,7 +51,7 @@ padding: 10px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #cccccc;
+  background-color: #f4e9cd;
 }
 .slider
 {
@@ -90,7 +90,7 @@ padding: 10px;
 }
 .manual-btn
 {
-  border: 16px solid #9ab0b8;
+  border: 16px solid #d9eaec;
   padding: 0px;
   cursor: pointer;
   transition: 1s;
